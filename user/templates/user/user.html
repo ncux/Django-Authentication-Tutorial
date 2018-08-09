@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authentication Tutorial</title>
+</head>
+<body>
+
+<h1> Authentication Tutorial </h1>
+
+    {% if user.is_authenticated %}
+        <h5>Hi, {{ user.username }}!</h5>
+    {% else %}
+        <h5>Login</h5>
+    {% endif %}
+
+</body>
+</html>
